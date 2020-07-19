@@ -4,14 +4,37 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <listener>
+  	<listener-class>com.highkeen.training.jwp.ApplicationStartupListener</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>HelloServlet</servlet-name>
   	<display-name>HelloServlet</display-name>
   	<description></description>
   	<servlet-class>com.highkeen.training.jwp.HelloServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RequestStart</servlet-name>
+  	<display-name>RequestStart</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.RequestStart</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ApplicationScopeTest</servlet-name>
+  	<display-name>ApplicationScopeTest</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.ApplicationScopeTest</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>HelloServlet</servlet-name>
   	<url-pattern>/HelloServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RequestStart</servlet-name>
+  	<url-pattern>/RequestStart.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ApplicationScopeTest</servlet-name>
+  	<url-pattern>/ApplicationScopeTest.do</url-pattern>
   </servlet-mapping>
 </web-app>
