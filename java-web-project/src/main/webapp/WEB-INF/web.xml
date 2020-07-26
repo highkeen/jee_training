@@ -25,6 +25,18 @@
   	<description></description>
   	<servlet-class>com.highkeen.training.jwp.ApplicationScopeTest</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>StartSession</servlet-name>
+  	<display-name>StartSession</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.StartSession</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SessionTest</servlet-name>
+  	<display-name>SessionTest</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.SessionTest</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>HelloServlet</servlet-name>
   	<url-pattern>/HelloServlet.do</url-pattern>
@@ -36,5 +48,13 @@
   <servlet-mapping>
   	<servlet-name>ApplicationScopeTest</servlet-name>
   	<url-pattern>/ApplicationScopeTest.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>StartSession</servlet-name>
+  	<url-pattern>/StartSession.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SessionTest</servlet-name>
+  	<url-pattern>/SessionTest.do</url-pattern>
   </servlet-mapping>
 </web-app>
