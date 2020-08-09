@@ -7,6 +7,7 @@ import javax.servlet.ServletContextListener;
  * Application Lifecycle Listener implementation class ApplicationStartupListener
  *
  */
+//@WebListener()
 public class ApplicationStartupListener implements ServletContextListener {
 
     /**

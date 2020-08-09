@@ -4,14 +4,80 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+ <!--  <welcome-file-list>
+  	<welcome-file>hello.jsp</welcome-file>
+  </welcome-file-list> -->
+  <listener>
+  	<listener-class>com.highkeen.training.jwp.ApplicationStartupListener</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>HelloServlet</servlet-name>
   	<display-name>HelloServlet</display-name>
   	<description></description>
   	<servlet-class>com.highkeen.training.jwp.HelloServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RequestStart</servlet-name>
+  	<display-name>RequestStart</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.RequestStart</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ApplicationScopeTest</servlet-name>
+  	<display-name>ApplicationScopeTest</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.ApplicationScopeTest</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>StartSession</servlet-name>
+  	<display-name>StartSession</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.StartSession</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SessionTest</servlet-name>
+  	<display-name>SessionTest</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.SessionTest</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShowName</servlet-name>
+  	<display-name>ShowName</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.ShowName</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<display-name>EmployeeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.highkeen.training.jwp.EmployeeServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>HelloServlet</servlet-name>
   	<url-pattern>/HelloServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RequestStart</servlet-name>
+  	<url-pattern>/RequestStart.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ApplicationScopeTest</servlet-name>
+  	<url-pattern>/ApplicationScopeTest.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>StartSession</servlet-name>
+  	<url-pattern>/StartSession.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SessionTest</servlet-name>
+  	<url-pattern>/SessionTest.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowName</servlet-name>
+  	<url-pattern>/ShowName.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<url-pattern>/employees</url-pattern>
   </servlet-mapping>
 </web-app>
