@@ -35,6 +35,7 @@ public class HelloServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//System.out.println(Thread.currentThread());
+		System.out.println("inside helloservlet service");
 		PrintWriter out=response.getWriter();
 		//response.setContentType("text/html");
 		out.append("<h1>Hello</h1>")
